@@ -1,0 +1,33 @@
+{
+  "name": "opspec",
+  "version": "1.0.0",
+  "description": "Formal specification language and static verifier for OPNet AssemblyScript smart contracts",
+  "main": "dist/index.js",
+  "bin": {
+    "opspec": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "node dist/cli.js verify test/annotated-good.ts && node dist/cli.js verify test/annotated-violations.ts",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "opnet",
+    "smart-contract",
+    "formal-verification",
+    "specification",
+    "assemblyscript",
+    "static-analysis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^4.1.2",
+    "typescript": "^5.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+}
