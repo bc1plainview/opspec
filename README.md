@@ -1,6 +1,6 @@
-# opspec — OPNet Specification Language & Verifier
+# opspec — OP_NET Specification Language & Verifier
 
-A formal specification language and static verifier for OPNet AssemblyScript smart contracts. Write formal specs as structured annotations directly in your contract source files, and the verifier checks that the code satisfies those specs.
+A formal specification language and static verifier for OP_NET AssemblyScript smart contracts. Write formal specs as structured annotations directly in your contract source files, and the verifier checks that the code satisfies those specs.
 
 ## Quick Start
 
@@ -57,7 +57,7 @@ The verifier then checks these specs against the actual code:
 
 ```
 ═══════════════════════════════════════════════════════════
-  opspec — OPNet Specification Verifier
+  opspec — OP_NET Specification Verifier
 ═══════════════════════════════════════════════════════════
 
 MyToken — src/MyToken.ts
@@ -84,7 +84,7 @@ MyToken — src/MyToken.ts
 |-----------|---------|---------|
 | `@invariant` | Property that holds for all states | `@invariant this.balance.value >= u256.Zero` |
 | `@state` | State machine transition | `@state ACTIVE -> PAUSED : pause()` |
-| `@opnet` | OPNet-specific constraint | `@opnet selectors-sha256` |
+| `@opnet` | OP_NET-specific constraint | `@opnet selectors-sha256` |
 
 ### Method-Level
 
